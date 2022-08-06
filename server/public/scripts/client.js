@@ -5,8 +5,26 @@ $(document).ready(onReady);
 function onReady() {
   $("#createBtn").on("click", handleCreate);
   $("#displayContainer").on("click", "#completeBtn", handleComplete);
-  //$("#displayContainer").on("click", "#completeBtn", handleDelete);
+  $("#displayContainer").on("click", "#deleteBtn", handleDelete);
   getTasks();
+}
+
+function handleDelete() {
+  console.log("clicked delete");
+  const id = $(this).closest("tr").data("id");
+  console.log(id);
+  $.ajax({
+    method: "DELETE",
+    url: `/todo/${id}`,
+  })
+    .then(function (response) {
+      console.log(response);
+      getTasks();
+    })
+    .catch(function (err) {
+      console.log(err);
+      alert("error in delete");
+    });
 }
 
 function handleComplete() {
@@ -29,8 +47,6 @@ function handleComplete() {
       alert("update failed");
     });
 }
-
-//function handleDelete() {}
 
 function handleCreate() {
   console.log("clicked");

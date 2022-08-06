@@ -4,24 +4,42 @@ const router = express.Router();
 
 const pool = require("../modules/pool");
 
+router.delete("/:id", (req, res) => {
+  const id = req.params.id;
+  console.log(id, "in delete");
+
+  const queryText = `
+  DELETE FROM "weekend-to-do-app"
+  WHERE "id" = $1;`;
+
+  pool
+    .query(queryText, [id])
+    .then((result) => {
+      res.sendStatus(204);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.sendStatus(500);
+    });
+});
+
 router.put("/status/:id", (req, res) => {
   console.log("in status update");
   const id = req.params.id;
-  const status = req.body.complete;
-  console.log(id, status);
+  console.log(id);
 
   let queryText = "";
 
-  //let queryValues = [req.body.id];
   queryText = `
   UPDATE "weekend-to-do-app"
   SET "complete" = 'TRUE'
   WHERE "id" = $1;
   `;
   //console.log(queryText, queryValues);
+  //why didn't it work when I put queryValues instead of [id]?
 
   pool
-    .query(queryText, [id])
+    .query(queryText, [id]) //second parameter needs an array
     .then((result) => {
       res.sendStatus(200);
     })
