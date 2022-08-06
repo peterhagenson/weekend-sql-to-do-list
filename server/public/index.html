@@ -11,12 +11,19 @@
   </head>
   <body>
     <h3>To-Do-List</h3>
-    <div id="input container">
+    <div id="inputContainer">
       <input type="text" id="taskIn" />
       <button id="createBtn">CREATE</button>
     </div>
-    <div id="displayContainer">
-      <p>display will go here</p>
-    </div>
+    <table>
+      <thead>
+        <tr id="tableHead">
+          <th>Task</th>
+          <th>Mark Complete</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="displayContainer"></tbody>
+    </table>
   </body>
 </html>

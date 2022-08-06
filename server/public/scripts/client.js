@@ -93,12 +93,11 @@ function renderTasks(listOfTasks) {
 
   for (let task of listOfTasks) {
     $("#displayContainer").append(`
-        <tr data-id=${task.id}>
+        <tr class="todoRow" data-id=${task.id}>
             <td>${task.task}</td>
-            <td>${task.complete}</td>
-            <td><button id="completeBtn">COMPLETE</button><td>
-            <td><button id="deleteBtn">DELETE</button><td>
-        <tr>
+            <td><button id="completeBtn">COMPLETE</button></td>
+            <td><button id="deleteBtn">DELETE</button></td>
+        </tr>
         `);
   }
 }

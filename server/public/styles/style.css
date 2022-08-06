@@ -1,0 +1,37 @@
+body {
+  background-color: #fffaf4;
+}
+
+#inputContainer {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#displayContainer,
+#displayContainer td {
+  border: 1px solid #08c0ff;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.todoRow {
+  background-color: #ffd5f4;
+}
+
+#tableHead {
+  color: #700a02;
+}
+
+h3 {
+  color: #700a02;
+  text-align: center;
+}
+
+button {
+  background-color: #08c0ff;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
