@@ -7,11 +7,19 @@ body {
   margin-bottom: 25px;
 }
 
+#taskComplete {
+  background-color: #9c0e00;
+}
+
 #displayContainer,
 #displayContainer td {
   border: 1px solid #08c0ff;
   border-collapse: collapse;
   padding: 10px;
+}
+
+.changeMe {
+  background-color: #9c0e00;
 }
 
 .todoRow {
@@ -20,7 +28,7 @@ body {
 
 #tableHead {
   color: #700a02;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h2 {
@@ -38,7 +46,13 @@ button {
 }
 
 table {
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.taskComplete {
+  background-color: #9c0e00;
 }

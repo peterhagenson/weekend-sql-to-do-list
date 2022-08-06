@@ -92,12 +92,22 @@ function renderTasks(listOfTasks) {
   $("#displayContainer").empty();
 
   for (let task of listOfTasks) {
-    $("#displayContainer").append(`
+    if (!task.complete) {
+      $("#displayContainer").append(`
         <tr class="todoRow" data-id=${task.id}>
-            <td>${task.task}</td>
+            <td width ="65%">${task.task}</td>
             <td><button id="completeBtn">COMPLETE</button></td>
             <td><button id="deleteBtn">DELETE</button></td>
         </tr>
         `);
+    } else {
+      $("#displayContainer").append(`
+        <tr class="todoRow" id="taskComplete" data-id=${task.id}>
+            <td width ="65%">${task.task}</td>
+            <td><button id="completeBtn">COMPLETE</button></td>
+            <td><button id="deleteBtn">DELETE</button></td>
+        </tr>
+        `);
+    }
   }
 }
