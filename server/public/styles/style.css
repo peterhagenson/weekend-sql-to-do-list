@@ -7,6 +7,10 @@ body {
   margin-bottom: 25px;
 }
 
+#taskIn {
+  border-radius: 6px;
+}
+
 #taskComplete {
   background-color: #9c0e00;
 }
@@ -15,6 +19,7 @@ body {
 #displayContainer td {
   border: 1px solid #08c0ff;
   border-collapse: collapse;
+  border-radius: 6px;
   /* padding: 10px; */
 }
 
@@ -43,6 +48,7 @@ button {
   background-color: #08c0ff;
   font-family: monospace;
   color: #fffaf4;
+  border-radius: 6px;
 }
 
 table {
@@ -61,4 +67,8 @@ table {
   color: #08c0ff;
   font-size: larger;
   font-weight: bolder;
+}
+
+tr {
+  border-radius: 6px;
 }
