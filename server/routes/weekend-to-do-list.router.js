@@ -68,7 +68,8 @@ router.post("/", (req, res) => {
 
 router.get("/", (req, res) => {
   console.log("in /todo GET");
-  let queryText = `SELECT * FROM "weekend-to-do-app";`;
+  let queryText = `SELECT * FROM "weekend-to-do-app"
+                   ORDER BY "id" DESC;`;
   pool
     .query(queryText)
     .then((result) => {
