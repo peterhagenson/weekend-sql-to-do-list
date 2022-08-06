@@ -55,6 +55,7 @@ function handleCreate() {
   taskToSend.complete = false;
   console.log(taskToSend);
   addTask(taskToSend);
+  $("#taskIn").val("");
 }
 
 function addTask(task) {
@@ -104,7 +105,7 @@ function renderTasks(listOfTasks) {
       $("#displayContainer").append(`
         <tr class="todoRow" id="taskComplete" data-id=${task.id}>
             <td width ="65%">${task.task}</td>
-            <td><button id="completeBtn">COMPLETE</button></td>
+            <td class="check">✓</td>
             <td><button id="deleteBtn">DELETE</button></td>
         </tr>
         `);

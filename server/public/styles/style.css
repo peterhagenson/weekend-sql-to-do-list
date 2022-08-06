@@ -15,7 +15,7 @@ body {
 #displayContainer td {
   border: 1px solid #08c0ff;
   border-collapse: collapse;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .changeMe {
@@ -55,4 +55,10 @@ table {
 
 .taskComplete {
   background-color: #9c0e00;
+}
+
+.check {
+  color: #08c0ff;
+  font-size: larger;
+  font-weight: bolder;
 }
