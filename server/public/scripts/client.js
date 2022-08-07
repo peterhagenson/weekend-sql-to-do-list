@@ -96,17 +96,17 @@ function renderTasks(listOfTasks) {
     if (!task.complete) {
       $("#displayContainer").append(`
         <tr class="todoRow" data-id=${task.id}>
-            <td width ="65%">${task.task}</td>
-            <td><button id="completeBtn">COMPLETE</button></td>
-            <td><button id="deleteBtn">DELETE</button></td>
+            <td class="textNotComplete" width ="65%">${task.task}</td>
+            <td><button id="completeBtn" class="btn btn-success">COMPLETE</button></td>
+            <td><button id="deleteBtn" class="btn btn-danger">DELETE</button></td>
         </tr>
         `);
     } else {
       $("#displayContainer").append(`
         <tr class="todoRow" id="taskComplete" data-id=${task.id}>
-            <td width ="65%">${task.task}</td>
-            <td class="check">✓</td>
-            <td><button id="deleteBtn">DELETE</button></td>
+            <td class="textComplete" width="66%">${task.task}</td>
+            <td width="17%" class="check">✓</td>
+            <td width="17%"><button id="deleteBtn" class="btn btn-danger">DELETE</button></td>
         </tr>
         `);
     }
