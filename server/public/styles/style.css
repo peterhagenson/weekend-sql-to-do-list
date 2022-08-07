@@ -11,6 +11,7 @@ body {
   border-radius: 6px;
 }
 
+/* I tried to do this as a class, with a class of taskComplete on the tr vs an ID, but that did not work. WHY?????? */
 #taskComplete {
   background-color: #9c0e00;
 }
@@ -23,9 +24,9 @@ body {
   /* padding: 10px; */
 }
 
-.changeMe {
+/* .changeMe {
   background-color: #9c0e00;
-}
+} */
 
 .todoRow {
   background-color: #ffd5f4;
@@ -59,9 +60,9 @@ table {
   text-align: center;
 }
 
-.taskComplete {
+/* .taskComplete {
   background-color: #9c0e00;
-}
+} */
 
 .check {
   color: #08c0ff;

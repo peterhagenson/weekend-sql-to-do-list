@@ -104,9 +104,9 @@ function renderTasks(listOfTasks) {
     } else {
       $("#displayContainer").append(`
         <tr class="todoRow" id="taskComplete" data-id=${task.id}>
-            <td width ="65%">${task.task}</td>
-            <td class="check">✓</td>
-            <td><button id="deleteBtn">DELETE</button></td>
+            <td width="66%">${task.task}</td>
+            <td width="17%" class="check">✓</td>
+            <td width="17%"><button id="deleteBtn">DELETE</button></td>
         </tr>
         `);
     }
