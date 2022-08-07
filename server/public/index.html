@@ -19,19 +19,12 @@
   <body>
     <h2>To-Do-List</h2>
     <div class="container" id="inputContainer">
-      <div
-        class="d-block input-group-sm mb-4 mt-4 mx-auto"
-        style="width: 400px"
-      >
-        <!-- <div class="d-md-flex align-items-center"> -->
         <input type="text" id="taskIn" placeholder="Enter Task" />
-        <button type="button" id="createBtn" class="btn btn-success">
-          CREATE
-        </button>
+        <button type="button" id="createBtn">CREATE</button>
       </div>
     </div>
     <table>
-      <thead>
+      <thead class="thead-dark">
         <tr id="tableHead">
           <th>Task</th>
           <th>Mark Complete</th>
