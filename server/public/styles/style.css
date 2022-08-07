@@ -2,14 +2,19 @@ body {
   background-color: #fffaf4;
 }
 
-/* #inputContainer {
+#inputContainer {
   margin-bottom: 30px;
   margin-top: 30px;
-} */
+}
 
-/* #taskIn {
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#taskIn {
   border-radius: 6px;
-} */
+}
 
 /* I tried to do this as a class, with a class of taskComplete on the tr vs an ID, but that did not work. WHY?????? */
 #taskComplete {
@@ -20,13 +25,13 @@ body {
 #displayContainer td {
   border: 1px solid #08c0ff;
   border-collapse: collapse;
-  /* border-radius: 6px; */
-  /* padding: 10px; */
+  border-radius: 6px;
+  padding: 10px;
 }
 
-/* .changeMe {
+.changeMe {
   background-color: #9c0e00;
-} */
+}
 
 .todoRow {
   background-color: #ffd5f4;
@@ -40,17 +45,17 @@ body {
 h2 {
   color: #700a02;
   text-align: center;
-  /* font-weight: bolder; */
+  font-weight: bolder;
   font-family: "Courier New", Courier, monospace;
   /* font-family: monospace; */
 }
 
-/* button {
+button {
   background-color: #08c0ff;
   font-family: monospace;
-  color: #fffaf4; */
-/* border-radius: 6px; */
-/* } */
+  color: #fffaf4;
+  border-radius: 6px;
+}
 
 table {
   width: 500px;
@@ -60,9 +65,9 @@ table {
   text-align: center;
 }
 
-/* .taskComplete {
+.taskComplete {
   background-color: #9c0e00;
-} */
+}
 
 .check {
   color: #08c0ff;
